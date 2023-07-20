@@ -1,0 +1,360 @@
+/* CSS Reset */
+/* Mengatur margin, padding, dan box-sizing untuk memastikan tampilan yang konsisten di berbagai browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Tampilan untuk halaman (body) */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgba(242, 243, 247, 0.9);
+}
+
+/* Tampilan untuk kontainer (class "box") */
+.box {
+  width: 100%;
+  background: #fafafa8e;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+}
+
+/* Tampilan untuk judul (H1) */
+h1 {
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+
+/* Tampilan untuk konten (class "form") */
+.form {
+  padding: 0 30px;
+}
+
+/* Tampilan untuk elemen input (class "input") */
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tampilan untuk label elemen input */
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Tampilan untuk input elemen input */
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Tampilan untuk elemen input berat badan (class "inputW") */
+.inputWeight {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tampilan untuk label elemen input berat badan */
+.inputWeight label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Tampilan untuk input elemen input berat badan */
+.inputWeight input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Tampilan untuk elemen input tinggi badan (class "inputH") */
+.inputHeight {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* Tampilan untuk label elemen input tinggi badan */
+.inputHeight label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Tampilan untuk input elemen input tinggi badan */
+.inputHeight input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Tampilan untuk tombol "Hitung BMI" (class "button") */
+.button {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: rgb(97,138,254,1);
+  border-radius: 7px;
+  padding: 12px;
+  display: inline-block;
+  margin-right: 10px; 
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+/* Tampilan tombol "Hitung BMI" ketika di-hover */
+.button:hover {
+  background: #0044ff;
+}
+
+/* Tampilan untuk hasil BMI (class "result") */
+.result {
+  padding: 10px 20px;
+}
+
+/* Tampilan untuk paragraf pada hasil BMI (class "result p") */
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Tampilan untuk hasil angka BMI (id "result") */
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+
+/* Tampilan untuk komentar pada hasil BMI (id "comment") */
+#comment {
+  color: #4f7df9;
+  font-weight: 800;
+}
+
+/* Tampilan untuk area komentar (class "comment") */
+.comment {
+  display: none;
+  border: dashed 1px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+/* Tampilan untuk kontainer pilihan gender (class "gender") */
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Style untuk radio button */
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Sembunyikan radio button default dari browser */
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Buat custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Saat mouse di atas radio button, tambahkan warna abu-abu */
+.gender .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Saat radio button dipilih, tambahkan warna biru */
+.gender .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Buat indikator (titik/circle) yang disembunyikan saat tidak dipilih */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Tampilkan indikator (titik/circle) saat radio button dipilih */
+.gender .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Gaya untuk indikator (titik/circle) */
+.gender .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/* END Style untuk radio button */
+
+/* Tampilan untuk area input tinggi badan dan berat badan (class "heightweight") */
+.heightweight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Tersembunyi secara default */
+  position: fixed; /* Tetap di tempat */
+  z-index: 1; /* Tampil di atas */
+  padding-top: 100px; /* Lokasi box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  overflow: auto; /* Aktifkan scroll jika diperlukan */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Hitam dengan opasitas */
+  padding-top: 300px;
+}
+
+/* Konten Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+/* Styling untuk teks pada Modal */
+#modalText {
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(24, 23, 23);
+}
+
+/* Modal ketika ada kesalahan (class "modal-wrong") */
+.modal-wrong {
+  border: 2px solid red;
+}
+
+/* Modal ketika benar (class "modal-correct") */
+.modal-correct {
+  border: 2px solid green;
+}
+
+/* Tombol Close */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Efek saat hover pada tombol Close */
+.close:hover {
+  color: #d41111; 
+}
+
+/* Media query untuk tampilan pada perangkat dengan lebar maksimum 700px */
+@media (max-width: 700px) {
+  /* Tampilan untuk kontainer box pada perangkat dengan lebar maksimum 700px */
+  .box {
+    width: 380px;
+  }
+
+  /* Tampilan untuk label pada elemen input */
+  .input label {
+    font-size: 18px;
+  }
+
+  /* Tampilan untuk label pada elemen input tinggi badan dan berat badan */
+  .inputH label, .inputW label {
+    font-size: 14px;
+  }
+
+  /* Tampilan untuk input pada elemen input */
+  .input input, .inputH input, .inputW input{
+    font-size: 24px;
+  }
+
+  /* Tampilan untuk modal-content pada perangkat dengan lebar maksimum 700px */
+  .modal-content {
+    width: 380px;
+  }
+}
